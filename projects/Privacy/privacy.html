@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Terms and Conditions Reading</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="https://juned-the-programmer.github.io/JunedProtfolio.github.io/index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="/index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/trust.jpg" height="500px" width="200px">
+		</div>
+		
+		<h3>Terms and Conditions Reading Application</h3>
+
+		<p>In today's life we are doing lot of transactions a day and we are accepting a terms and Conditions without reading them we will trust the person who is explaining us about that.
+		<br>
+		<br>
+        For this application we have to create a our own dataset. So for that we have collected the dataset manually from the banks and read everything and differentiate which is against the customer.
+        <br>
+        <br>
+		We have implemented this in React Native so we can use both in android and IOS devices easily. Used NLP(Word2vec) for model training and implementation.
+		<br>
+		<br>
+		Used Django Rest Framework for creating a API for that project and used in the application.
+		<br>
+		<br>
+		This is our minor project so we have worked on this project around 4 months and complete it. </p>
+
+        <h3>Steps for the Projects are : </h3>
+        <p>
+            1. Take the image of the terms and conditions paper which bank will give us to sign.
+            <br><br>
+            2. Upload it to the Our Android Application it will extract the text from that image and store in another variable , USing Django REST framework API.
+            <br><br>
+            3. Give that extracted text to the NLP model which will identify which terms and conditions are against the customer and alert the customers on that.
+        </p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Django REST Framework</li>
+			<li>- React-Native</li>
+			<li>- Google Cloud (For hosting API)</li>
+            <li>- NLP (Natural Language Processing)</li>
+		</ul>
+
+
+		<div class="img-container">
+			<img src="images/signing.jpg">
+        </div>
+
+        <br><br>
+        <p>It will help the lot of people while doing the sign on the Terms and conditions paper apart from the blindly signing that.
+            <br><br>
+            Still we are working on that and updating the Model (NLP) to increase the accuracy of the predictions of the terms and conditions which are aginst the customer.
+        </p>        
+	</div>
+
+</body>
+</html>
