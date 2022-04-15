@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Attendance System</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+
+	<style type="text/css">
+		.img-container{
+			max-width: 600px;
+		}
+
+		img{
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav-wrapper">
+
+		<!-- Link around dots-wrapper added after tutorial video -->
+		<a href="https://juned-the-programmer.github.io/JunedProtfolio.github.io/index.html">
+			<div class="dots-wrapper">
+				<div id="dot-1" class="browser-dot"></div>
+				<div id="dot-2" class="browser-dot"></div>
+				<div id="dot-3" class="browser-dot"></div>
+			</div>
+		</a>
+
+		<ul id="navigation">
+			<li><a href="/index.html#contact">Contact</a></li>
+
+		</ul>
+	</div>
+
+	<div class="main-container">
+		<br>
+
+		<div class="img-container">
+			<img src="images/index.jpg">
+		</div>
+		
+		<h3>God's Eye</h3>
+
+		<p>I have took the inspiration from the fast and furiouos 7 movie in that they have introduce the God's Eye , Which can track any person in the world from anywhere. 
+		<br>
+		<br>
+		I have tried to make a similar kind of thing but not in the that much big architecture. Just a small version of that we can track any person in the collage or a one village easily.
+		<br>
+		<br>
+        The person data are stored in one centralized database. I have used the dlib library to extract the landmarks of the face and and store in the database.
+        <br>
+        <br>
+		I have used 2 component in this (1) Frontend (2) Backend. We have to run the server (Backend) on each camera service , And it will compare it will recognize using the facial recognition library.
+		<br>
+		<br>
+		I have used the socketIO in that so if any person got recognized in any camera which we are finding. It will directly send the request to the frontend to display it. That the person has appered at this camera at this time.</p>
+
+		<h5>Technologies:</h5>
+		<ul>
+			<li>- Python</li>
+			<li>- Flask</li>
+            <li>- Open CV</li>
+            <li>- Face Recognition</li>
+            <li>- Python-Engine-IO</li>
+            <li>- Python-socket-IO</li>
+		</ul>
+
+        <h5>Home Page</h5>
+		<div class="img-container">
+			<img src="images/home.png">
+		</div>
+		<br>
+		<br>
+		<h5>Add Camera</h5>
+		<div class="img-container">
+			<img src="images/addcamera.png">
+		</div>
+		<br>
+		<br>
+		<h5>Add Person</h5>
+		<div class="img-container">
+			<img src="images/addperson.png">
+		</div>
+		<br>
+		<br>
+		<h5>Location list</h5>
+		<div class="img-container">
+			<img src="images/locationlist.png">
+		</div>
+		<br>
+		<br>
+		<h5>Tracking person</h5>
+		<div class="img-container">
+			<img src="images/trackingperson.png">
+		</div>
+	</div>
+	<div style="margin-bottom: 200px;"></div>
+</body>
+</html>
