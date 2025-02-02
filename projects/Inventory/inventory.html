@@ -46,67 +46,102 @@
 	<div class="main-container">
 		<br>
 
-		<div class="img-container">
-			<img src="images/Dashboard.png">
-		</div>
-		
-		<h3>Inventory Management System</h3>
+		<h3>Business Management System (Retailer & Manufacturer)</h3>
 
-		<p>This was a project I started in back 2020 when i have good understanding of Djago Framework . In this Project i have included each and every functionality which is offered by customer. 
-		<br>
-		<br>
-		This system manage the Inventory of Particular shop with Billing and customer management also .
-		<br>
-		<br>
-		From this system the the owner can manage almost everything they want. Some other companies offers this kind of applications but they provide just a Stock management.
-		<br>
-		<br>
-		They have all the data and it is hosted on web server. So they can easily check the details where they want to check.  
-		<br>
-		<br>
-		I worked on this projects almost 6 months to Completely Workabl web application.
-        <br>
-        <br>
-        This application is for only Estimate Sale and Purchase.Currently I have created a GST application but i gave it for testing to the client. </p>
+		<p>This project is a comprehensive business management system designed to streamline operations for both retailers and manufacturers. 
+			Unlike simple applications, this system integrates multiple interconnected modules to provide a complete workflow for managing a business. 
+			It eliminates the need for multiple tools by offering a centralized platform for all business operations.</p>
 
-		<h5>Technologies:</h5>
+		<h5>Key Features:</h5>
+		<p><strong>Customer Management:</strong></p>
 		<ul>
-			<li>- Python</li>
-			<li>- Django</li>
-			<li>- MySQL</li>
-			<li>- AWS (S3 & RDS)</li>
-			<li>- Heroku(For Hosting)</li>
-            <li>- Jquery</li>
+			<li>Maintain detailed customer accounts, including purchase history, payment records, and interactions.</li>
+			<li>Track customer behavior and preferences to improve service and build stronger relationships.</li>
+		</ul>
+		
+		<p><strong>Supplier Management:</strong></p>
+		<ul>
+			<li>Manage supplier details, track orders, and monitor payment histories.</li>
+			<li>Ensure smooth communication and transactions with suppliers.</li>
 		</ul>
 
+		<p><strong>Sales & Purchase Management:</strong></p>
+		<ul>
+			<li>Record and track sales and purchases in real-time.</li>
+			<li>Generate invoices and receipts seamlessly.</li>
+		</ul>
 
-		<h5>Inventory Dashboard</h5>
-		<div class="img-container">
-			<img src="images/Dashboard.png">
-		</div>
+		<p><strong>Billing & Payments:</strong></p>
+		<ul>
+			<li>Automate billing processes for both customers and suppliers.</li>
+			<li>Track payments, dues, and financial statements effortlessly.</li>
+		</ul>
 
-		<h6>Login Form</h5>
-		<div class="img-container">
-			<img src="images/Login.png">
-		</div>
+		<p><strong>Stock Management:</strong></p>
+		<ul>
+			<li>For <strong>retailers:</strong> Manage inventory levels, track stock movements, and avoid overstocking or stockouts.</li>
+			<li>For <strong>manufacturers:</strong> Track raw materials, monitor usage, and manage production inventory.</li>
+		</ul>
 
-		<h5>Estimate Sale</h5>
-		<div class="img-container">
-			<img src="images/Estimate Sale.png">
-		</div>
+		<p><strong>Financial Statements:</strong></p>
+		<ul>
+			<li>Generate detailed statements for sales, purchases, customer accounts, supplier accounts, and payments.</li>
+			<li>Provide insights into business performance and financial health.</li>
+		</ul>
 
-		<h5>Estimate Purchase</h5>
-		<div class="img-container">
-			<img src="images/Estimate Purchase.png">
-		</div>
+		<p><strong>Role-Based Workflows:</strong></p>
+		<ul>
+			<li>During signup, users can specify whether they are a <strong>retailer</strong> or <strong>manufacturer.</strong></li>
+			<li>Tailored workflows ensure that each user type gets the tools they need:</li>
+			<ul>
+				<li><strong>Retailers:</strong> Focus on sales, purchases, and inventory management.</li>
+				<li><strong>Manufacturers:</strong> Manage raw materials, production, and finished goods inventory.</li>
+			</ul>
+		</ul>
 
-		<h5>Daily Income and Expense</h5>
-		<div class="img-container">
-			<img src="images/Daily Income.png">
-            <img src="images/Daily Expense.png">
-		</div>
+		<p><strong>Centralized Platform:</strong></p>
+		<ul>
+			<li>Everything from customer interactions to financial statements is managed in one place, eliminating the need for multiple applications.</li>
+		</ul>
 
-	</div>
+		<h5>Technical Highlights:</h5>
+		<p>Redis Cache: Used to store frequently accessed data, reducing latency and improving system performance.</p>
+		<p>Scalable Architecture: Designed to handle growing businesses with increasing data and user loads.</p>
 
+		<h5>Technologies Used:</h5>
+		<ul>
+			<li>- Python (Django)</li>
+			<li>- PostgreSQL</li>
+			<li>- Redis</li>
+		</ul>
+
+		<h5>Why This Project Stands Out:</h5>
+		<p><strong>Comprehensive Scope:</strong></p>
+		<p>This project goes beyond basic CRUD functionality by integrating customer and supplier management, sales and purchases, billing, stock tracking, and financial statements into a single, cohesive system. 
+			Unlike many beginner projects that focus on isolated features, this app mirrors the complexity of real-world ERP systems, making it a practical and ambitious solution for businesses.</p>
+
+		<p><strong>Dual Workflows (Retailer vs. Manufacturer):</strong></p>
+		<p>One of the standout features is the role-based differentiation, which tailors workflows for manufacturers (e.g., raw material tracking) and retailers (e.g., finished goods management). 
+			This level of customization demonstrates a deep understanding of user needs and elevates the project beyond generic inventory tools. 
+			It’s a killer feature that adds significant value and complexity.</p>
+
+		<p><strong>Redis for Performance:</strong></p>
+		<p>To address real-world scalability challenges, I implemented Redis for caching, significantly reducing latency in reporting and statement generation. 
+			This optimization is often overlooked in beginner projects, but it’s a critical addition that ensures the app remains performant and responsive, even as data grows.</p>
+
+		<p><strong>End-to-End Financial Tracking:</strong></p>
+		<p>The app includes robust financial tracking features, such as payment management, customer/supplier histories, and customizable statements. 
+			These aren’t just nice-to-have features—they’re essential for businesses to operate efficiently. This project isn’t just a demo; it’s a tool that solves real business problems.</p>
+		
+		<p><strong>Modern, Scalable Tech Stack:</strong></p>
+		<p>I chose a tech stack that balances rapid development with scalability and maintainability: Django for the backend, PostgreSQL for relational data integrity, and Redis for performance. 
+			This industry-relevant stack reflects a professional approach to building a solution that’s not just functional but also future-proof.</p>
+
+		
+		<h5>Why this Inventory Project Matters to me: ?</h5>
+		<p>This isn’t just a "learning project"—it’s a mini-ERP system that could compete with tools like Odoo or Zoho Inventory if scaled further. 
+			The fact that I am thinking about interconnected workflows (e.g., how a sale reduces stock and updates customer debt) shows maturity in designing systems, not just coding features.</p>
+
+		
 </body>
 </html>

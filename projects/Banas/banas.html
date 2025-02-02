@@ -45,56 +45,46 @@
 
 	<div class="main-container">
 		<br>
-
-		<div class="img-container">
-			<img src="images/Login.png">
-		</div>
 		
-		<h3>Banas Water Billing System</h3>
+		<h3>Billing System (Banas Water)</h3>
 
-		<p>This was a my first project after learning the basic of Django.It has not the most advanced Features.But Still i have tried my best to give it.
-		<br>
-		<br>
-		This system is suitable for both admin and customer.Customers can see there details in the appplications like previous bill,Paid Bill etc..
-		<br>
-		<br>
-		Firstly I have worked with it using dbsqllite but after hosting it to the Heroku.I have shifted to PostgresSQL.
-		<br>
-		<br>
-		I worked on this project around 4 months to complete this project.</p>
+		<p>
+			As part of our business, we provide services related to purified water coolers. In the initial stages, managing the business was straightforward due to a limited number of customers. 
+			However, as the business grew, maintaining monthly billing based on daily entries became inefficient. We faced numerous customer complaints, such as discrepancies in the number of coolers taken or billing errors. 
+			These issues were affecting customer satisfaction and had the potential to harm the business in the long run. To address this, I developed a system to streamline operations and reduce complaints.
+		</p>
+
+		<p>The project is divided into three main modules: </p> 
+		
+		<p><strong>Customer Module:</strong>
+			This module is responsible for managing customer accounts. When a new customer is registered, the system automatically sends a welcome email and generates a unique QR code for the customer. 
+			This QR code simplifies the process of adding daily entries by allowing customers to scan it for quick and accurate data input.</p>
+		
+		<p><strong>Daily Entry Module:</strong>
+			This module tracks the number of coolers taken by customers each day. Customers can easily log their entries by scanning their QR code, ensuring accurate and efficient record-keeping.
+		</p>
+
+		<p><strong>Billing Module:</strong>
+			This module handles payment tracking and bill generation for all customers. It ensures that billing is accurate, transparent, and hassle-free, reducing the likelihood of disputes.</p>
+
+		<h5>Technical Enhancements:</h5>
+		<p><strong>Redis Cache:</strong> Implemented to reduce latency and improve response times.</p>
+		<p><strong>Celery:</strong> Used for background tasks and automation, ensuring smooth and efficient operations.</p>
+		<p><strong>Batch Processing:</strong> Implemented to archive historical data into a separate table, reducing the load on the primary database and improving performance.</p>
+
+
+		<h5>Future Plans:</h5>
+		<p><strong>Event Management Module:</strong> We also provide services for functions and parties. I plan to develop a dedicated module to manage these orders efficiently.</p>
+		<p><strong>UI Development:</strong> Currently, the system is API-based. I aim to build a user-friendly interface using Flutter, making the system more accessible and visually appealing.</p>
+		<p><strong>Open Source Contribution:</strong> I’m open to making this project open source, allowing others to contribute and learn. This is a great opportunity for developers to gain hands-on experience with real-world projects and add something impactful to their resumes.</p>
 
 		<h5>Technologies:</h5>
 		<ul>
-			<li>- Python</li>
-			<li>- Django</li>
+			<li>- Python (Django Rest Framework [DRF])</li>
 			<li>- Postgres</li>
-			<li>- AWS (S3 & RDS)</li>
-            <li>- HTML/CSS</li>
-            <li>- Bootstrap</li>
+			<li>- Redis</li>
+			<li>- Celery</li>
 		</ul>
-
-
-		<h5>Login & Signup</h5>
-		<div class="img-container">
-			<img src="images/Login.png">
-            <img src="images/Signup.png">
-		</div>
-
-		<h6>Home Page</h5>
-		<div class="img-container">
-			<img src="images/HomePage.png">
-		</div>
-
-		<h5>Daily Entry Admin</h5>
-		<div class="img-container">
-			<img src="images/Daily Entry.png">
-		</div>
-
-		<h5>Admin Dashboard</h5>
-		<div class="img-container">
-			<img src="images/admin.png">
-		</div>
-
 	</div>
 
 </body>
